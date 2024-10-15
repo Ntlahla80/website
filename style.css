@@ -66,6 +66,7 @@ body{
         display: flex;  
         align-items: center;
         padding: 0 10%;
+        margin-right: auto;
     }
     .home-content
     {
@@ -105,6 +106,24 @@ font-weight: 600;
 letter-spacing: 1px;
 
 }
+.home-image
+{
+  margin-left: auto; /* Pushes the container to the right */
+            margin-right: 50px; /* Optional: additional space from the right */
+            width: 300px; /* Set a width for the container */
+            text-align: center; /* Center the image inside the container */
+            padding: 20px;
+            background-color: lightgrey; /* Optional: background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+img
+{
+
+     max-width: 100%; /* Responsive image */
+            height: auto; /
+}
+
 /*about us Contact*/
 .container {
     width: 100%;
@@ -342,16 +361,17 @@ font-size: 17px;
 color: #fff;
 line-height: 1.5;
 text-align: center;
-background-color: #000;
+
 
 }
 article h3
 {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 300;
   margin-top: 30px;
-  color: #fff;
+  color: #000;
+  -webkit-text-stroke: .5px #fff;
 
 }
 article p
@@ -362,9 +382,14 @@ article p
   line-height: 1.5;
  
 }
+.image_container img
+{
+max-width: 500%;
+height: auto;
 
+}
 
-/*footer8*/
+/*footer*/
 footer
 {
 
