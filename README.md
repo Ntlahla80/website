@@ -2,7 +2,7 @@ Portfolio website is built with HTML And CSS.
 This website built to showcase my technical skills, web design skills.
 
 
-##Features
+## Features
 Navbar
 HomePage
 About
@@ -14,7 +14,7 @@ Fully responsive for all devices
 Easy to browse
 Easy to customize details
 
-##Technologies Used
+## Technologies Used
 I utilize a variety of technologies in my Personal Portfolio project, including the following:
 HTML
 CSS
