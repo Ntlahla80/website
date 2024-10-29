@@ -104,14 +104,14 @@ body {
     font-size: 1em;
     color: #000;
     padding: 0 15px;
-    border: none; /* Remove default border */
+    border: none;
   }
   
   .send-btn {
     width: 40px;
     height: 40px;
     background-color: transparent;
-    border: none; /* Remove default border */
+    border: none; 
     cursor: pointer;
     margin-left: 10px;
   }
@@ -125,7 +125,7 @@ body {
     overflow: hidden;
     position: fixed;
     bottom: 20px;
-    right: 20px; /* Positioning from the right */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    right: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   

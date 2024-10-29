@@ -3,7 +3,7 @@ $(document).ready(() => {
         $(".chat-box").slideToggle("slow");
     });
 
-    // Define potential keywords and their responses with links
+    
     const keywordResponses = {
         "portfolio": "My portfolio showcases my skills and projects in web development, design, and more. You can check it out <a href='homepage.html' target='_blank'>here</a>.",
         "contact": "You can contact me via email at ntlahlapikwa80@gmail.com or visit the <a href='contact.html' target='_blank'>Contact</a> page.",
@@ -15,29 +15,29 @@ $(document).ready(() => {
         "c#": "C# is used for developing a variety of applications, including desktop, web, and mobile applications. More info can be found in the <a href='skills.html' target='_blank'>Skills</a> section.",
         "mysql": "MySQL is a database management system used for creating, managing, and accessing databases. Learn more in the <a href='skills.html' target='_blank'>Skills</a> section.",
         "android": "Android Studio is the official integrated development environment for Google's Android operating system. Check out the <a href='skills.html' target='_blank'>Skills</a> section for more.",
-        // Add more keywords and responses as needed
+      
     };
 
-    // Sending messages
+   
     $(".send-btn").click((e) => {
-        e.preventDefault(); // Prevent default form submission
-        const message = $(".chat-input input").val().trim().toLowerCase(); // Convert to lowercase for keyword matching
+        e.preventDefault(); 
+        const message = $(".chat-input input").val().trim().toLowerCase();
         if (message) {
-            $(".chats").append(`<div class="my-chat">${message}</div>`); // Append user's message
-            $(".chat-input input").val(''); // Clear the input
+            $(".chats").append(`<div class="my-chat">${message}</div>`);
+            $(".chat-input input").val(''); 
 
-            // Check for keywords in the user's message
+            
             let responseMessage = "I'm sorry, I don't have an answer for that.";
             for (const keyword in keywordResponses) {
                 if (message.includes(keyword)) {
                     responseMessage = keywordResponses[keyword];
-                    break; // Exit loop after finding the first match
+                    break;
                 }
             }
 
             setTimeout(() => {
                 $(".chats").append(`<div class="client-chat">${responseMessage}</div>`);
-                $('.chats').scrollTop($('.chats')[0].scrollHeight); // Scroll to bottom
+                $('.chats').scrollTop($('.chats')[0].scrollHeight); 
             }, 1000);
         }
     });
