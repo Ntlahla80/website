@@ -23,7 +23,7 @@ body {
   
   .chat-box {
     position: fixed; 
-    bottom: 80px; 
+    bottom: 230px; 
     right: 20px; 
     width: 400px; 
     height: 450px; 
@@ -99,7 +99,7 @@ body {
   .chat-input input {
     width: calc(100% - 50px);
     height: 40px;
-    background-color: #4f5d73c7;
+    background-color: #77b3d4c7;
     border-radius: 20px;
     font-size: 1em;
     color: #000;
@@ -124,8 +124,9 @@ body {
     cursor: pointer;
     overflow: hidden;
     position: fixed;
-    bottom: 20px;
+    bottom: 150px;
     right: 20px; 
+     z-index: 1001;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
