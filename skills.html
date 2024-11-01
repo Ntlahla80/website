@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="chat.css"> 
  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' href="homepage.html">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
@@ -83,7 +84,35 @@
             built on JetBrains' IntelliJ IDEA software and designed specifically for Android development. 
           </p>
         </div>
-
+             
+        <div class="container3">
+            <div class="chat-box"style="display: none;"> 
+                <div class="client">
+                    <img src="images/logo.png" alt="logo" />
+                    <div class="client-infor">
+                        <h2>Ntlahla</h2>
+                        <p>online</p>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="client-chat">Hi!</div>
+                    <!-- <div class="my-chat">Hi!</div>
+                    <div class="client-chat">How can I help you today?</div>
+                    <div class="my-chat">How to contact you?</div>
+                    <div class="client-chat">You can contact me by going on this</div> -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Enter Message" />
+                    <button class="send-btn">
+                        <img src="images/send2.png" alt="send" />
+                    </button>
+                </div>
+            </div>
+            <div class="chat-btn">
+                <img src="images/chat.png" alt="chat box icon btn" />
+            </div>
+        </div>
+      
      
 
         
@@ -106,5 +135,7 @@
      </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
